@@ -74,10 +74,21 @@ li:hover {
   src: url("../font/CooperMdBTMedium.ttf");
 }
 
+.vs-class {
+  transform: translate(-50%, -50%);
+}
 .cooper-md {
   font-family: "CooperMdBTMedium", sans-serif;
 }
 
 .inter-font {
   font-family: "Inter", sans-serif;
+}
+
+.review-box-shadow {
+  box-shadow: 3px 3px 0 0 #282828;
+}
+
+.deign-service-box-shadow {
+  box-shadow: 5px 5px 0 0 #282828;
 }

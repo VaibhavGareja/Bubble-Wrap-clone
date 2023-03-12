@@ -9,6 +9,9 @@ import WorkSection from "../components/PageSection/WorkSection";
 import BrandSection from "../components/PageSection/BrandSection";
 import HowItWorks from "../components/PageSection/HowItWorks";
 import WhyChooseUs from "../components/PageSection/WhyChooseUs";
+import FeatureSection from "../components/PageSection/FeatureSection";
+import ReviewSection from "../components/PageSection/ReviewSection";
+import DesignServicesSection from "../components/PageSection/DesignServicesSection";
 
 const Home: NextPage = () => {
   return (
@@ -19,6 +22,9 @@ const Home: NextPage = () => {
       <BrandSection />
       <HowItWorks />
       <WhyChooseUs />
+      <FeatureSection />
+      <ReviewSection />
+      <DesignServicesSection />
     </div>
   );
 };
