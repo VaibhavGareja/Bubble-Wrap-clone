@@ -7,6 +7,8 @@ import ServiceSlider from "../components/Slider/ServiceSlider";
 import CustomSlider from "../components/Slider/BaseSlider";
 import WorkSection from "../components/PageSection/WorkSection";
 import BrandSection from "../components/PageSection/BrandSection";
+import HowItWorks from "../components/PageSection/HowItWorks";
+import WhyChooseUs from "../components/PageSection/WhyChooseUs";
 
 const Home: NextPage = () => {
   return (
@@ -15,6 +17,8 @@ const Home: NextPage = () => {
       <ServiceSlider />
       <WorkSection />
       <BrandSection />
+      <HowItWorks />
+      <WhyChooseUs />
     </div>
   );
 };
