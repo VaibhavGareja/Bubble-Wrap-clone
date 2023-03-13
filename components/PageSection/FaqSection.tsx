@@ -5,10 +5,15 @@ import { Faqs } from "../../database/faq";
 export default function FaqSection() {
   const [open, setOpen] = useState<boolean>(false);
   const [data, setData] = useState<any>("");
-  const handleClick = async () => {
-    setOpen(!open);
+  const [activeIndex, setActiveIndex] = useState(null);
+  const handleClick = (index: any) => {
+    if (index === activeIndex) {
+      setActiveIndex(null);
+    } else {
+      setActiveIndex(index);
+      return;
+    }
   };
-
   return (
     <div className="bg-[#f5f3ef] py-[6.25rem]">
       <div className=" flex flex-col container mx-auto text-center  text-[#333] ">
@@ -19,19 +24,15 @@ export default function FaqSection() {
           descColor="text-[#191919]"
         />
         <div className="w-[65%] mx-auto text-left mt-[48px]">
-          {Faqs.map((faq) => {
+          {Faqs.map((faq, index) => {
             return (
               <div
-                className={`cursor-pointer relative  overflow-hidden 
-                
-                ${data == faq.que ? "faq-dropdown-click" : "faq-dropdown"}`}
+                className={`cursor-pointer border-b-[2px] border-[rgb(51,51,51,0.32)] relative  overflow-hidden 
+                ${
+                  activeIndex == index ? "faq-dropdown-click" : "faq-dropdown"
+                }`}
                 onClick={async () => {
-                  if (data != "" && data == faq.que) {
-                    await setData("");
-                  }
-                  if (data != faq.que) {
-                    setData(faq.que);
-                  }
+                  handleClick(index);
                 }}
               >
                 <div
@@ -43,13 +44,13 @@ export default function FaqSection() {
                   <img
                     src="faq-arrow.svg"
                     className={` w-[15px] absolute right-[5px] ${
-                      data == faq.que
+                      activeIndex == index
                         ? "arrow-transition-click"
                         : "arrow-transition"
                     }`}
                   />
                 </div>
-                <div className="px-[1.5rem] pb-[0.5rem] pt-[1.5rem] border-[1px] border-[#333] rounded-[20px] bg-[white]">
+                <div className="px-[1.5rem]  pb-[0.5rem] pt-[1.5rem] border-[1px] border-[#333] rounded-[20px] bg-[white]">
                   {faq.answer}
                 </div>
               </div>

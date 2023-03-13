@@ -12,7 +12,8 @@ li:hover {
 }
 
 .slider-items {
-  transform: translate3d(-19.645%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(-19.645%, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
   will-change: transform;
 }
@@ -37,7 +38,8 @@ li:hover {
 
 .header {
   will-change: transform;
-  transform: translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 4rem, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
 
@@ -88,38 +90,27 @@ li:hover {
 }
 
 .faq-dropdown-click {
-  border-bottom: 2px solid;
-  border-color: rgba(255, 0, 0);
+  transition: max-height 1s ease-in;
   max-height: 1000px;
-  -webkit-transition: max-height 2s;
-  -moz-transition: max-height 2s;
-  -ms-transition: max-height 2s;
-  -o-transition: max-height 2s;
-  transition: max-height 2s;
 }
 
 .faq-dropdown {
-  animation: border-animation;
   max-height: 75px;
+  transition: max-height 0.5s ease-in-out;
   overflow: hidden;
-  -webkit-transition: max-height 1s;
-  -moz-transition: max-height 1s;
-  -ms-transition: max-height 1s;
-  -o-transition: max-height 1s;
-  transition: max-height 1s;
-  border-bottom: 2px solid;
-  border-color: rgb(51, 51, 51, 0.32);
 }
 
 .arrow-transition {
   transition: 0.3s;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-90deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(-90deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
 
 .arrow-transition-click {
   transition: 0.3s;
-  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
+  transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg)
+    rotateY(0deg) rotateZ(0deg) skew(0deg, 0deg);
   transform-style: preserve-3d;
 }
 
