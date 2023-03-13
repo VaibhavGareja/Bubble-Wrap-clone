@@ -1,18 +1,17 @@
 import React from "react";
 import { DesignServices } from "../../database/design-services";
+import Heading from "../Heading";
 
 export default function DesignServicesSection() {
   return (
     <div className="bg-[#333] pt-[6.25rem] pb-[4.75rem]">
       <div className=" flex flex-col container mx-auto text-center text-[white]">
-        <div className="relative">
-          <h2 className="cooper-md  text-center text-[2.5rem] leading-[3rem] font-[400]">
-            Sugar, spice and everything nice
-          </h2>
-          <p className=" inter-font text-[1.5rem] leading-[2.1875rem] mt-[0.75rem] font-[400]">
-            You name it, we design it
-          </p>
-        </div>
+        <Heading
+          title="Sugar, spice and everything nice"
+          desc="You name it, we design it"
+          headingColor="text-[white]"
+          descColor="text-[white]"
+        />
         <div className=" overflow-auto md:overflow-hidden">
           <div className="flex flex-wrap w-[73rem] md:w-auto mt-[4.375rem]  inter-font justify-start md:justify-center text-[#333]">
             {DesignServices.map((service) => {

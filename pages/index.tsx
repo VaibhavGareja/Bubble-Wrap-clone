@@ -12,6 +12,8 @@ import WhyChooseUs from "../components/PageSection/WhyChooseUs";
 import FeatureSection from "../components/PageSection/FeatureSection";
 import ReviewSection from "../components/PageSection/ReviewSection";
 import DesignServicesSection from "../components/PageSection/DesignServicesSection";
+import PricingSection from "../components/PageSection/PricingSection";
+import FaqSection from "../components/PageSection/FaqSection";
 
 const Home: NextPage = () => {
   return (
@@ -25,6 +27,8 @@ const Home: NextPage = () => {
       <FeatureSection />
       <ReviewSection />
       <DesignServicesSection />
+      <PricingSection />
+      <FaqSection />
     </div>
   );
 };

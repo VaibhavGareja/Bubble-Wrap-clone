@@ -1,16 +1,17 @@
 import React from "react";
 import HowItWorksCard from "../Cards/HowItWorksCard";
+import Heading from "../Heading";
 
 export default function HowItWorks() {
   return (
     <div className="bg-[#fbe9ec] py-[6.25rem]">
       <div className="container flex flex-col mx-auto text-center text-[#333] ">
-        <h2 className="text-center text-[2.5rem] cooper-md leading-[3rem] ">
-          How BubbleWrap works?
-        </h2>
-        <p className="mt-[0.75rem] text-center text-[1.5rem] leading-[2.1875rem]">
-          Getting started with BubbleWrap is as easy as copying and pasting
-        </p>
+        <Heading
+          title="How BubbleWrap works?"
+          desc="Getting started with BubbleWrap is as easy as copying and pasting"
+          headingColor="text-[#333]"
+          descColor="text-[#333]"
+        />
         <div className="flex mt-[5.5rem] how-it-works-cards-list  justify-between items-start">
           <HowItWorksCard
             image="/submit.svg"

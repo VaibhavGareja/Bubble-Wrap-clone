@@ -1,15 +1,16 @@
 import React from "react";
+import Heading from "../Heading";
 
 export default function WhyChooseUs() {
   return (
     <div className="bg-[#bcfbba] py-[6.25rem]">
       <div className="container flex flex-col mx-auto text-center  text-[#333] ">
-        <h2 className="text-center text-[2.5rem] cooper-md leading-[3rem] ">
-          Why choose BubbleWrap?
-        </h2>
-        <p className="mt-[0.75rem] text-center text-[1.5rem] leading-[2.1875rem]">
-          We help you save approx $2,28,000 a year. No kidding
-        </p>
+        <Heading
+          title="Why choose BubbleWrap?"
+          desc="We help you save approx $2,28,000 a year. No kidding"
+          headingColor="text-[#333]"
+          descColor="text-[#333]"
+        />
         <div className="relative">
           <div className="mt-[2.625rem]  rounded-[20px] bg-[#fbf8b6] xl:px-[9.3rem] lg:py-[4.24rem] py-[3rem]  border-[2px] border-[#333]">
             <p className="cooper-md text-[1.875rem] leading-[2.25rem] text-[#333] font-[400] ">
