@@ -14,6 +14,9 @@ import ReviewSection from "../components/PageSection/ReviewSection";
 import DesignServicesSection from "../components/PageSection/DesignServicesSection";
 import PricingSection from "../components/PageSection/PricingSection";
 import FaqSection from "../components/PageSection/FaqSection";
+import ContactSection from "../components/PageSection/ContactSection";
+import Footer from "../components/Footer";
+import GetStartedSlider from "../components/Slider/GetStartedSlider";
 
 const Home: NextPage = () => {
   return (
@@ -29,6 +32,9 @@ const Home: NextPage = () => {
       <DesignServicesSection />
       <PricingSection />
       <FaqSection />
+      <ContactSection />
+      <GetStartedSlider />
+      <Footer />
     </div>
   );
 };

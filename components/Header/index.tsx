@@ -1,8 +1,25 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function Header() {
+  const [stickyHeader, setStickyHeader] = useState<boolean>(false);
+  const handleScroll = () => {
+    const position = window.pageYOffset;
+    // console.log(position);
+    if (position >= 0) {
+      setStickyHeader(true);
+    } else {
+      setStickyHeader(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
-    <div className="fixed  w-full header z-50">
+    <div className={`fixed header w-full z-50 `}>
       <div className=" bg-[white]   border-[2px] rounded-[48px] border-[black]  container mx-auto items-center py-2 pl-[24px] pr-[8px]  justify-between">
         <div className="flex flex-row justify-between items-center">
           <img src="/logo.png" className="max-w-[191px]" />
