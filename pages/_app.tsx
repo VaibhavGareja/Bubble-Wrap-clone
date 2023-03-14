@@ -8,6 +8,11 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
+        <meta charSet="utf-8" />
+        <meta
+          content="initial-scale=1, minimum-scale=1, width=device-width"
+          name="viewport"
+        />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link
           href="https://fonts.googleapis.com/css2?family=Inter&display=swap"

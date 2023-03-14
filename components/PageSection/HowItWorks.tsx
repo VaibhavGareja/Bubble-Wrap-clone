@@ -4,7 +4,7 @@ import Heading from "../Heading";
 
 export default function HowItWorks() {
   return (
-    <div className="bg-[#fbe9ec] py-[6.25rem]">
+    <div className="bg-[#fbe9ec] py-[5.5rem] lg:py-[6.25rem]">
       <div className="container flex flex-col mx-auto text-center text-[#333] ">
         <Heading
           title="How BubbleWrap works?"
@@ -12,7 +12,7 @@ export default function HowItWorks() {
           headingColor="text-[#333]"
           descColor="text-[#333]"
         />
-        <div className="flex mt-[5.5rem] how-it-works-cards-list  justify-between items-start">
+        <div className="flex flex-col  md:flex-row mt-[3rem] md:mt-[4rem] lg:mt-[5.5rem] how-it-works-cards-list  justify-between items-start">
           <HowItWorksCard
             image="/submit.svg"
             title="1. Submit Your Request"
@@ -30,9 +30,12 @@ export default function HowItWorks() {
           />
         </div>
         <div className="flex items-center justify-center">
-          <button className="button mt-[3.5rem] text-[#161616] flex items-center leading-[1.15rem] gap-x-[8px] inter-font  text-[1.15rem] border-[2px] font-[500] border-[black] py-[1rem] px-[2.5rem] rounded-[40px]">
+          <button className="button text-[#161616] flex items-center leading-[1.15rem]  inter-font text-[1rem] md:text-[1.15rem] border-[2px] font-[500] border-[black] py-[1rem] px-[2.5rem] rounded-[40px]">
             Get Started
-            <img src="https://uploads-ssl.webflow.com/6352e9f1db028e490078b1df/639add9a6f642843c45770cf_btn-arrow.svg" />
+            <img
+              src="https://uploads-ssl.webflow.com/6352e9f1db028e490078b1df/639add9a6f642843c45770cf_btn-arrow.svg"
+              className="w-[17px] ml-[5px]"
+            />
           </button>
         </div>
       </div>

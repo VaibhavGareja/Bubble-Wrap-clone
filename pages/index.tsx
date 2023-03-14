@@ -17,10 +17,12 @@ import FaqSection from "../components/PageSection/FaqSection";
 import ContactSection from "../components/PageSection/ContactSection";
 import Footer from "../components/Footer";
 import GetStartedSlider from "../components/Slider/GetStartedSlider";
+import Announcement from "../components/PageSection/Announcement";
 
 const Home: NextPage = () => {
   return (
     <div>
+      <Announcement />
       <HeroSection />
       <ServiceSlider />
       <WorkSection />
