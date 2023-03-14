@@ -15,7 +15,7 @@ export default function FaqSection() {
     }
   };
   return (
-    <div className="bg-[#f5f3ef] py-[6.25rem]">
+    <div className="bg-[#f5f3ef] py-[5.5rem] lg:py-[6.25rem]">
       <div className=" flex flex-col container mx-auto text-center  text-[#333] ">
         <Heading
           title="FAQs"
@@ -23,7 +23,7 @@ export default function FaqSection() {
           headingColor="text-[#333]"
           descColor="text-[#191919]"
         />
-        <div className="w-[65%] mx-auto text-left mt-[48px]">
+        <div className=" w-[100%] md:w-[85%] lg:w-[65%] mx-auto text-left mt-[1.8rem] md:mt-[3rem]">
           {Faqs.map((faq, index) => {
             return (
               <div
@@ -60,17 +60,6 @@ export default function FaqSection() {
                   <div className="px-[1.5rem] pb-[0.5rem] pt-[1.5rem] border-[1px] border-[#333] rounded-[20px] bg-[white]">
                     {faq.answer}
                   </div>
-                  <img
-                    src="faq-arrow.svg"
-                    className={` w-[15px] absolute right-[5px] ${
-                      activeIndex == index
-                        ? "arrow-transition-click"
-                        : "arrow-transition"
-                    }`}
-                  />
-                </div>
-                <div className="px-[1.5rem]  pb-[0.5rem] pt-[1.5rem] border-[1px] border-[#333] rounded-[20px] bg-[white]">
-                  {faq.answer}
                 </div>
               </div>
             );

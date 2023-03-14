@@ -12,7 +12,7 @@ export default function FeatureSection() {
           descColor="text-[#333]"
         />
         <div className="  z-[2] w-[100%] mt-[4.375rem] justify-start flex-wrap  items-stretch gap-y-[1.5rem] md:gap-y-[0]   flex flex-col md:flex-row ">
-          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333] h-[215px] md:h-[312px] xl:h-[388px]  bg-[#f2e6f4] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[38%] mr-[1.5%] mb-[1.5%]">
+          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333]    bg-[#f2e6f4] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[38%] mr-[1.5%] mb-[1.5%]">
             <div className=" flex justify-end w-full">
               <img
                 src="/features/pause.svg"
@@ -23,12 +23,12 @@ export default function FeatureSection() {
               <h4 className=" cooper-md text-[1.2rem] lg:text-[1.5rem] xl:text-[2rem] leading-[2rem] font-[400] text-[#333] mt-[2rem] md:mt-[3rem]">
                 Pause / Cancel
               </h4>
-              <p className="text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.7rem] max-w-[19rem]">
+              <p className="text-[0.9rem] md:text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.5rem] md:mt-[0.7rem] max-w-[19rem]">
                 You can pause or cancel BubbleWrap’s subscription anytime
               </p>
             </div>
           </div>
-          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333] h-[215px] md:h-[312px] xl:h-[388px]  bg-[#fae8ce] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[25%] mr-[1.5%] mb-[1.5%]">
+          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333]    bg-[#fae8ce] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[25%] mr-[1.5%] mb-[1.5%]">
             <div className=" flex justify-start w-full">
               <img
                 src="/features/faster.svg"
@@ -39,13 +39,13 @@ export default function FeatureSection() {
               <h4 className=" cooper-md text-[1.2rem] lg:text-[1.5rem] xl:text-[2rem] leading-[2rem] font-[400] text-[#333] mt-[2rem] md:mt-[3rem]">
                 Faster, Smarter & Better
               </h4>
-              <p className="text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.7rem] max-w-[19rem]">
+              <p className="text-[0.9rem] md:text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.5rem] md:mt-[0.7rem] max-w-[19rem]">
                 Get your designs delivered within 24-48 hours of submitting the
                 request
               </p>
             </div>
           </div>
-          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333] h-[215px] md:h-[312px] xl:h-[388px]  bg-[#e4f5d7] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[34%] mb-[1.5%]">
+          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333]    bg-[#e4f5d7] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[34%] mb-[1.5%]">
             <div className=" flex justify-start w-full">
               <img
                 src="/features/money-back.svg"
@@ -56,13 +56,13 @@ export default function FeatureSection() {
               <h4 className=" cooper-md text-[1.2rem] lg:text-[1.5rem] xl:text-[2rem] leading-[2rem] font-[400] text-[#333] mt-[2rem] md:mt-[3rem]">
                 100% MoneyBack
               </h4>
-              <p className="text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.7rem] max-w-[19rem]">
+              <p className="text-[0.9rem] md:text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.5rem] md:mt-[0.7rem] max-w-[19rem]">
                 Get a 100% moneyback if you are not satisfied with our work, we
                 bet you won’t
               </p>
             </div>
           </div>
-          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333] h-[215px] md:h-[268px] xl:h-[343px]  bg-[#fce3e7] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[26%] mr-[1.5%] mb-[1.5%]">
+          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333]    bg-[#fce3e7] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[26%] mr-[1.5%] mb-[1.5%]">
             <div className=" flex justify-start w-full">
               <img
                 src="/features/good-design.svg"
@@ -73,13 +73,13 @@ export default function FeatureSection() {
               <h4 className=" cooper-md text-[1.2rem] lg:text-[1.5rem] xl:text-[2rem] leading-[2rem] font-[400] text-[#333] mt-[2rem] md:mt-[3rem]">
                 Insanely Good Designs
               </h4>
-              <p className="text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.7rem] max-w-[19rem]">
+              <p className="text-[0.9rem] md:text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.5rem] md:mt-[0.7rem] max-w-[19rem]">
                 Designs so good, they will think the Aliens did it! Try it for
                 yourself
               </p>
             </div>
           </div>
-          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333] h-[215px] md:h-[268px] xl:h-[343px]  bg-[#faf8cd] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[40%] mr-[1.5%] mb-[1.5%]">
+          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333]    bg-[#faf8cd] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[40%] mr-[1.5%] mb-[1.5%]">
             <div className=" flex justify-end w-full">
               <img
                 src="/features/free-trial.svg"
@@ -90,13 +90,13 @@ export default function FeatureSection() {
               <h4 className=" cooper-md text-[1.2rem] lg:text-[1.5rem] xl:text-[2rem] leading-[2rem] font-[400] text-[#333] mt-[2rem] md:mt-[3rem]">
                 7 Days Free Trial
               </h4>
-              <p className="text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.7rem] max-w-[19rem]">
+              <p className="text-[0.9rem] md:text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.5rem] md:mt-[0.7rem] max-w-[19rem]">
                 Not sure about purchasing subscription? We offer a free 7 days
                 trail which helps you decide
               </p>
             </div>
           </div>
-          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333] h-[215px] md:h-[268px] xl:h-[343px]  bg-[#e1f2f1] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[31%]  mb-[1.5%]">
+          <div className="flex justify-between border-[2px] rounded-[20px] border-[#333]    bg-[#e1f2f1] px-[1.5rem] flex-col pt-[1.5rem] pb-[2rem] w-[100%]  md:w-[31%]  mb-[1.5%]">
             <div className=" flex justify-end w-full">
               <img
                 src="/features/unlimited-req.svg"
@@ -107,7 +107,7 @@ export default function FeatureSection() {
               <h4 className=" cooper-md text-[1.2rem] lg:text-[1.5rem] xl:text-[2rem] leading-[2rem] font-[400] text-[#333] mt-[2rem] md:mt-[3rem]">
                 Unlimited Requests
               </h4>
-              <p className="text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.7rem] max-w-[19rem]">
+              <p className="text-[0.9rem] md:text-[1rem] xl:text-[1.25rem]  inter-font leading-[1.5rem] mt-[0.5rem] md:mt-[0.7rem] max-w-[19rem]">
                 We’re satisfied when you are, request unlimited designs with
                 unlimited iteration
               </p>

@@ -4,7 +4,7 @@ import Heading from "../Heading";
 
 export default function DesignServicesSection() {
   return (
-    <div className="bg-[#333] pt-[6.25rem] pb-[4.75rem]">
+    <div className="bg-[#333] pt-[5.5rem] pb-[5.5rem] lg:pt-[6.25rem] lg:pb-[4.75rem]">
       <div className=" flex flex-col container mx-auto text-center text-[white]">
         <Heading
           title="Sugar, spice and everything nice"
