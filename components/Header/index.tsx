@@ -6,7 +6,6 @@ export default function Header() {
   const [stickyHeader, setStickyHeader] = useState<boolean>(false);
   const handleScroll = () => {
     const position = window.pageYOffset;
-    // console.log(position);
     if (position >= 0) {
       setStickyHeader(true);
     } else {
@@ -16,21 +15,42 @@ export default function Header() {
   const handleClick = async () => {
     setOpen(!open);
   };
-
+  const [translateY, setTranslateY] = useState("4rem");
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    function handleScroll() {
+      const scrollY = window.scrollY;
+      console.log(scrollY);
+      const newTranslateY =
+        scrollY > 210 ? "1.5rem" : `${4.0 - scrollY / 100}rem`;
+      console.log(newTranslateY);
+      setTranslateY(newTranslateY);
+    }
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // useEffect(() => {
+  //   window.addEventListener("scroll", handleScroll, { passive: true });
+  //   return () => {
+  //     window.removeEventListener("scroll", handleScroll);
+  //   };
+  // }, []);
+  const style = {
+    transform: `translate3d(0, ${translateY}, 0)`,
+    // transition: "transform 0.5s ease-out",.
+  };
   return (
     <>
-      <div className={`fixed header  w-full z-40 `}>
+      <div className={`fixed header w-full z-40 `} style={style}>
         <div className=" bg-[white]  border-[2px] rounded-[48px] max-w-[90%] lg:max-w-[95vw] border-[black] nav-container mx-auto items-center  pl-[1.875rem] pr-[1.875rem] py-[1rem]  md:py-[1rem] md:pl-[1.5rem] md:pr-[1.5rem] lg:py-2 lg:pl-[1.5rem] lg:pr-2  justify-between">
           <div className="flex flex-row justify-between items-center">
             <img
               src="/logo.png"
-              className=" w-[10rem] esm:w-[12rem] xl:w-[13rem]"
+              className=" cursor-pointer w-[10rem] esm:w-[12rem] xl:w-[13rem]"
             />
             <ul className="hidden lg:block text-[1.125rem] font-[500] cursor-pointer">
               <li className="hover:bg-[black] cursor-pointer rounded-[12px] mr-[0.8rem] inline-block px-[0.8rem] py-[0.7rem] hover:text-[white]">

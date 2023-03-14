@@ -9,7 +9,7 @@ export default function ContactSection() {
           <h2 className="max-w-[33rem] mx-auto cooper-md  text-[1.4rem] md:text-[3rem] lg:text-[2.5rem] font-[400] text-center">
             Send your requests today, <br /> get your designs tomorrow!
           </h2>
-          <div className="flex esm:flex-row flex-col md:gap-x-[1rem] gap-y-[0.5rem] md:gap-y-0  justify-center mt-[1rem] md:mt-[2rem] md:items-center">
+          <div className="flex esm:flex-row flex-col gap-x-[1rem] gap-y-[0.5rem] md:gap-y-0  justify-center mt-[1rem] md:mt-[2rem] md:items-center">
             <button className="button-green justify-center text-[#161616] flex items-center leading-[1.15rem]  inter-font text-[1rem] md:text-[1.15rem] border-[2px] font-[500] border-[black] py-[1rem] px-[2.5rem] rounded-[40px]">
               Get Started
               <img

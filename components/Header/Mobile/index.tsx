@@ -5,7 +5,7 @@ export default function MobileHeader({ onClick }: any) {
 
   return (
     <div
-      className={`z-50 open-transition flex justify-center items-center fixed inset-0 opacity-[1] text-[#1d1d1f] bg-[#fff] h-[100vh]`}
+      className={`z-50 open-transition   flex justify-center items-center fixed inset-0 opacity-[1] text-[#1d1d1f] bg-[#fff] h-[100vh]`}
     >
       <button onClick={onClick}>
         <img
