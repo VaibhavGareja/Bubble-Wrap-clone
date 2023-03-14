@@ -125,7 +125,6 @@ li:hover {
   overflow: hidden;
 }
 
-
 .arrow-transition {
   transition: 0.3s;
   transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0deg) rotateZ(-90deg) skew(0deg, 0deg);
@@ -230,5 +229,9 @@ li:hover {
   background-size: contain;
   background-repeat: no-repeat;
   -webkit-filter: brightness(0%);
+  filter: brightness(0%);
+}
+
+.hamburger-icon {
   filter: brightness(0%);
 }
